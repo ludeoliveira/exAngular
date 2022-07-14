@@ -1,0 +1,23 @@
+<p>consulta</p>
+<button (click)="consultarTodos()">Consultar</button>
+<hr>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>idade</th>
+            <th>Email</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let ct of contatos">
+            <td>{{ ct.id }}</td>
+            <td>{{ ct.nome }}</td>
+            <td>{{ ct.idade }}</td>
+            <td>{{ ct.email }}</td>
+            <td><a [routerLink]="['/contato', ct.id]">Editar</a></td>
+        </tr>
+    </tbody>
+</table>

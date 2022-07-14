@@ -1,0 +1,8 @@
+<input type="text" [(ngModel)]="contato.id" readonly>
+<input type="text" [(ngModel)]="contato.nome">
+<input type="number" [(ngModel)]="contato.idade">
+<input type="email" [(ngModel)]="contato.email">
+
+<button (click)="efetivarAlteracao()">Alterar</button>
+
+<label>{{ msg }}</label>

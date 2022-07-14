@@ -1,0 +1,7 @@
+<form #f="ngForm" (ngSubmit)="saveContato(f.value)">
+    <input type="text" ngModel name="nome" placeholder="Informe nome">
+    <input type="number" ngModel name="idade" placeholder="Informe idade">
+    <input type="email" ngModel name="email" placeholder="Informe e-mail">
+    <button>Salvar</button>
+    <label> {{ msg }}</label>
+</form>
